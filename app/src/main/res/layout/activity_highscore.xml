@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_highscore"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/highScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginStart="162dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="89dp"
+            android:layout_marginBottom="311dp"
+            android:fontFamily="sans-serif-black"
+            android:text="High Score: 0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="115dp"
+            android:layout_marginBottom="203dp"
+            android:contentDescription="playagain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/highScoreTextView"
+            android:text="PLAY AGAIN"
+          />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
